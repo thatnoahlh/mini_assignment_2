@@ -9,11 +9,43 @@
     <title>My Webpage</title>
 </head>
 <body>
-    <!-- Your content goes here -->
-    <h1>Hello World!</h1>
-    <div id="kitty">
-        <img src="images/kitten.jpg" alt="This is a kitten.">
-        <button id="btn">Click me</button>
-    </div>
+    <form>
+        <!-- Your content goes here -->
+        <h1>Sandwich Maker</h1>
+
+        <label for="name">Sandwich name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <div>
+            <p>Choose your bread:</p>
+            <label for="white">White</label>
+            <input type="radio" id="White" name="Bread" value="white">
+            <br>
+            <label for="wheat">Wheat</label>
+            <input type="radio" id="Wheat" name="Bread" value="wheat">
+            <br>
+
+        </div>
+        <div>
+            <label for="protein">Choose Protein:</label>
+            <select id="protein">
+                <option value="turkey">Turkey</option>
+                <option value="ham">Ham</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Choose your toppings:</p>
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" id="lettuce" name="Lettuce" value="lettuce">
+            <br>
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" id="tomato" name="Tomato" value="tomato">
+            <br>
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="Cheese" name="Cheese" value="Cheese">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
